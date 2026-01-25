@@ -2,6 +2,7 @@
 #define NRF24L01_H
 
 #include <stdint.h>
+#include "stm32l4xx_hal.h" 
 
 // REGISTER MAP
 #define CONFIG_REGISTER                  0x00
@@ -97,10 +98,6 @@ typedef enum {
 // PAYLOAD
 #define NRF24_MAX_PAYLOAD                32
 #define NRF24_DEFAULT_PAYLOAD            4
-
-// DRIVER HANDLE
-typedef struct __SPI_HandleTypeDef SPI_HandleTypeDef;
-typedef struct GPIO_TypeDef GPIO_TypeDef;
 
 typedef struct
 {
